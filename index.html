@@ -6,57 +6,36 @@
 <title>Chengdu Trip Plan</title>
 
 <style>
-body {
-    font-family: Arial;
-    text-align: center;
-    background: #f0f2f5;
-}
-
-.container {
-    margin-top: 50px;
-}
-
+body { font-family: Arial; margin:0; background:#f0f2f5; }
+.header { text-align:center; padding:40px 20px; background:#d32f2f; color:white; }
+.container { padding:20px; max-width:900px; margin:auto; }
 .card {
-    background: white;
-    margin: 15px auto;
-    padding: 20px;
-    width: 300px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background:white;
+    margin:15px 0;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.2s;
 }
-
-a {
-    text-decoration: none;
-    color: #1976d2;
-    font-weight: bold;
-}
+.card:hover { transform:scale(1.02); }
+a { text-decoration:none; color:#1976d2; font-size:18px; }
 </style>
-
 </head>
+
 <body>
+
+<div class="header">
+<h1>🐼 Chengdu Trip Plan</h1>
+<p>4 Days Ultimate Itinerary</p>
+</div>
 
 <div class="container">
 
-<h1>🐼 Chengdu Trip Plan</h1>
-<p>แผนเที่ยวเฉิงตู 4 วัน สำหรับ 4 คน</p>
-
-<div class="card">
-    <a href="day1.html">📅 Day 1 - City & Street</a>
-</div>
-
-<div class="card">
-    <a href="day2.html">📅 Day 2 - Panda & Tech</a>
-</div>
-
-<div class="card">
-    <a href="day3.html">📅 Day 3 - Dujiangyan</a>
-</div>
-
-<div class="card">
-    <a href="day4.html">📅 Day 4 - Final Day</a>
-</div>
+<div class="card"><a href="day1.html">📅 Day 1 - City & Street</a></div>
+<div class="card"><a href="day2.html">📅 Day 2 - Panda & Tech</a></div>
+<div class="card"><a href="day3.html">📅 Day 3 - Dujiangyan</a></div>
+<div class="card"><a href="day4.html">📅 Day 4 - Final Day</a></div>
 
 </div>
-
 </body>
 </html>
