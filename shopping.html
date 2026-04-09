@@ -8,55 +8,49 @@
         :root { --shop-color: #e65100; --bg: #fffbf0; }
         body { font-family: -apple-system, sans-serif; background: var(--bg); margin: 0; padding: 10px; }
         .header { background: var(--shop-color); color: white; padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 15px; }
-        .card { background: white; border-radius: 12px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        .shop-name { font-size: 1.2em; font-weight: bold; color: #333; display: block; }
+        .zone-header { background: #333; color: white; padding: 8px 15px; border-radius: 8px; margin: 20px 0 10px 0; font-size: 0.9em; font-weight: bold; }
+        .card { background: white; border-radius: 12px; padding: 15px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 5px solid var(--shop-color); }
+        .shop-name { font-size: 1.1em; font-weight: bold; color: #333; display: block; }
         .cn-box { background: #fdf2e9; border: 1px dashed var(--shop-color); padding: 8px; border-radius: 6px; margin: 8px 0; color: #d84315; font-size: 1em; }
-        .location { font-size: 0.85em; color: #666; margin-bottom: 5px; }
-        .recommend { background: #e8f5e9; padding: 8px; border-radius: 6px; font-size: 0.85em; color: #2e7d32; margin-top: 10px; }
+        .location { font-size: 0.85em; color: #666; }
         .checklist-item { display: flex; align-items: flex-start; gap: 10px; }
-        input[type="checkbox"] { width: 20px; height: 20px; margin-top: 3px; }
-        .btn-back { display: block; text-align: center; padding: 15px; color: #1976d2; text-decoration: none; font-weight: bold; margin-top: 20px; border: 1px solid #1976d2; border-radius: 10px; background: white; }
+        input[type="checkbox"] { width: 22px; height: 22px; margin-top: 3px; }
+        .btn-back { 
+            display: block; text-align: center; padding: 15px; color: #1976d2; text-decoration: none; 
+            font-weight: bold; margin-top: 25px; margin-bottom: 20px; border: 2px solid #1976d2; 
+            border-radius: 12px; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
     </style>
 </head>
 <body>
 
     <div class="header">
         <strong>🛍️ SHOPPING CHECKLIST</strong><br>
-        <span style="font-size: 0.8em;">ย่าน Chunxi & Taikoo Li (ใกล้โรงแรม Jiali)</span>
+        <span style="font-size: 0.8em;">อ้างอิงพิกัดโรงแรม 嘉立酒店 (三圣街)</span>
     </div>
 
+    <div class="zone-header">📍 โซนที่ 1: ใต้โรงแรม (เดินชิลล์สายอาร์ต)</div>
+    
     <div class="card">
         <div class="checklist-item">
             <input type="checkbox">
             <div>
-                <span class="shop-name">1. Bosideng (เสื้อขนเป็ด)</span>
-                <div class="cn-box">波司登 (春熙路店)</div>
-                <div class="location">📍 สาขา Flagship บนถนน Chunxi (เดินจากโรงแรมได้)</div>
-                <div class="recommend">🗓️ <strong>ควรไป:</strong> Day 1 หรือ Day 4 (ช่วงเย็น) เพราะอยู่ใกล้ที่พักมาก</div>
+                <span class="shop-name">Tangba Street (ย่านคาเฟ่/อาร์ต)</span>
+                <div class="cn-box">镗钯街 (Tangba Street)</div>
+                <div class="location">📍 เดินลงทิศใต้จากโรงแรม (Day 1 ช่วงเย็น)</div>
             </div>
         </div>
     </div>
 
-    <div class="card">
-        <div class="checklist-item">
-            <input type="checkbox">
-            <div>
-                <span class="shop-name">2. PANE & 3. ANTA (รองเท้า)</span>
-                <div class="cn-box">ANTA 安踏 / PANE (春熙路步行街)</div>
-                <div class="location">📍 ย่าน Chunxi Road / ห้างรวมกีฬา</div>
-                <div class="recommend">🗓️ <strong>ควรไป:</strong> Day 4 เพื่อซื้อและแพ็คลงกระเป๋าเตรียมกลับได้เลย</div>
-            </div>
-        </div>
-    </div>
+    <div class="zone-header">📍 โซนที่ 2: เหนือโรงแรม (Taikoo Li & Chunxi)</div>
 
     <div class="card">
         <div class="checklist-item">
             <input type="checkbox">
             <div>
-                <span class="shop-name">4. Brandy Melville</span>
+                <span class="shop-name">Brandy Melville (Taikoo Li)</span>
                 <div class="cn-box">Brandy Melville (成都太古里)</div>
-                <div class="location">📍 สาขา Taikoo Li (ย่านวัยรุ่นฮิต)</div>
-                <div class="recommend">🗓️ <strong>ควรไป:</strong> Day 1 ช่วงเดินเที่ยว Taikoo Li หลังกินข้าว Ma's Kitchen</div>
+                <div class="location">📍 เดินขึ้นเหนือไปทาง Taikoo Li (ใกล้สุดๆ)</div>
             </div>
         </div>
     </div>
@@ -65,10 +59,22 @@
         <div class="checklist-item">
             <input type="checkbox">
             <div>
-                <span class="shop-name">5. ARISEISM & 6. GO GO EGO</span>
-                <div class="cn-box">COSMO成都 (潮流买手店)</div>
-                <div class="location">📍 ห้าง COSMO ชั้น 2-3 (รวมแบรนด์สตรีท)</div>
-                <div class="recommend">🗓️ <strong>ควรไป:</strong> Day 2 ช่วงเย็นที่ไปห้าง COSMO และดูตึกแฝด</div>
+                <span class="shop-name">Bosideng / Anta / Pane / Sanfu</span>
+                <div class="cn-box">波司登 / 安踏 / 三福</div>
+                <div class="location">📍 ย่าน Chunxi Road (ทิศตะวันตกเฉียงเหนือ)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="zone-header">📍 โซนที่ 3: นั่งรถ (Day 2 / Day 4)</div>
+
+    <div class="card">
+        <div class="checklist-item">
+            <input type="checkbox">
+            <div>
+                <span class="shop-name">COSMO (ARISEISM / GO GO EGO)</span>
+                <div class="cn-box">COSMO成都</div>
+                <div class="location">📍 ไปพร้อม Day 2 (ย่านตึกแฝด/ห้างสตรีท)</div>
             </div>
         </div>
     </div>
@@ -77,29 +83,11 @@
         <div class="checklist-item">
             <input type="checkbox">
             <div>
-                <span class="shop-name">7. Sanfu (สินค้าไลฟ์สไตล์)</span>
-                <div class="cn-box">三福时尚 (春熙路店)</div>
-                <div class="location">📍 ตึกรวมสินค้าใกล้รถไฟใต้ดิน Chunxi</div>
-                <div class="recommend">🗓️ <strong>ควรไป:</strong> Day 4 เก็บตกของฝากกระจุกกระจิกก่อน 6 โมงเย็น</div>
+                <span class="shop-name">Dongjiao Jiyi (โรงงานเก่า)</span>
+                <div class="cn-box">东郊记忆</div>
+                <div class="location">📍 ไปพร้อม Day 4 (ทิศตะวันออกเฉียงเหนือ)</div>
             </div>
         </div>
-    </div>
-
-    <div class="card">
-        <div class="checklist-item">
-            <input type="checkbox">
-            <div>
-                <span class="shop-name">8. Tangba Street (Tanga)</span>
-                <div class="cn-box">唐坝街 / 镗钯街 (Tangba Street)</div>
-                <div class="location">📍 อยู่ทางทิศใต้ของ Taikoo Li (เดินไปได้)</div>
-                <div class="recommend">🗓️ <strong>ควรไป:</strong> Day 1 ช่วงเย็น เป็นถนนสายอาร์ตที่มีร้านเก๋ๆ เยอะมาก</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card" style="background: #fff3e0;">
-        <strong>💡 คำแนะนำเพิ่มเติม:</strong><br>
-        <p style="font-size: 0.85em;">โรงแรมของคุณออย (Jiali Hotel Taikoo Li) อยู่ในจุดยุทธศาสตร์ที่ดีมาก ร้าน **Bosideng, Sanfu, และ ANTA** อยู่ในระยะเดินไม่เกิน 500-800 เมตร สามารถแวะไปดูตอนเช้าก่อนออกเดินทาง หรือตอนเย็นหลังจากกลับมาถึงที่พักได้ทุกวันครับ</p>
     </div>
 
     <a href="index.html" class="btn-back">⬅️ กลับหน้าหลัก</a>
