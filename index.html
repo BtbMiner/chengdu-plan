@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chengdu Trip Plan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chengdu Trip Plan</title>
 
-<style>
-body { font-family: Arial; margin:0; background:#f0f2f5; }
-.header { text-align:center; padding:40px 20px; background:#d32f2f; color:white; }
-.container { padding:20px; max-width:900px; margin:auto; }
-.card {
-    background:white;
-    margin:15px 0;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    transition:0.2s;
-}
-.card:hover { transform:scale(1.02); }
-a { text-decoration:none; color:#1976d2; font-size:18px; font-weight:bold; display:block; }
-.shop-link { color: #e65100; } /* สีพิเศษสำหรับหน้าช้อปปิ้ง */
-</style>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; background:#f0f2f5; }
+        .header { text-align:center; padding:40px 20px; background:#d32f2f; color:white; }
+        .container { padding:20px; max-width:900px; margin:auto; }
+        .card {
+            background:white;
+            margin:15px 0;
+            padding:20px;
+            border-radius:15px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.08);
+            transition:0.2s;
+            border-left: 8px solid #d32f2f;
+        }
+        .card:hover { transform:scale(1.02); background: #fffde7; }
+        
+        /* แยกสีตามประเภทกิจกรรม */
+        .card-nature { border-left-color: #2e7d32; } /* Day 2 ตูเจียงเยี่ยน */
+        .card-panda { border-left-color: #1976d2; }  /* Day 3 แพนด้า & เทค */
+        .card-final { border-left-color: #e65100; }  /* Day 4-5 */
+        .card-shop { border-left-color: #673ab7; border: 2px solid #673ab7; } /* Shopping */
+
+        a { text-decoration:none; color:#333; font-size:18px; font-weight:bold; display:block; }
+        .sub-text { font-size: 13px; color: #666; font-weight: normal; margin-top: 5px; }
+    </style>
 </head>
 
 <body>
 
 <div class="header">
-<h1>🐼 Chengdu Trip Plan</h1>
-<p>4 Days Ultimate Itinerary</p>
+    <h1>🐼 Chengdu Trip Plan</h1>
+    <p>11 - 15 APR 2026 | Ultimate Guide</p>
 </div>
 
 <div class="container">
-<div class="card"><a href="day1.html">📅 Day 1 - City & Street</a></div>
-<div class="card"><a href="day2.html">📅 Day 2 - Panda & Tech</a></div>
-<div class="card"><a href="day3.html">📅 Day 3 - Dujiangyan</a></div>
-<div class="card"><a href="day4.html">📅 Day 4 - Final Day</a></div>
-<div class="card" style="border: 2px solid #e65100;"><a href="shopping.html" class="shop-link">🛍️ Shopping Checklist & Locations</a></div>
+    <div class="card">
+        <a href="day1.html">📅 Day 1 - City Landmarks</a>
+        <div class="sub-text">IFS Panda, Taikoo Li, Mawangzi, Anshun Bridge</div>
+    </div>
+
+    <div class="card card-nature">
+        <a href="day2.html">📅 Day 2 - Dujiangyan & Blue Tears</a>
+        <div class="sub-text">Ancient Irrigation, Panda Valley, Nanqiao Night View</div>
+    </div>
+
+    <div class="card card-panda">
+        <a href="day3.html">📅 Day 3 - Panda Base & Tech</a>
+        <div class="sub-text">He Hua (South Gate), Digital Square, SKP, Twin Towers</div>
+    </div>
+
+    <div class="card card-final">
+        <a href="day4.html">📅 Day 4 - Souvenirs & Farewell</a>
+        <div class="sub-text">Dongjiao Jiyi, Busy For You, Final Hotpot</div>
+    </div>
+
+    <div class="card card-final" style="opacity: 0.9;">
+        <a href="day5.html">📅 Day 5 - Lifestyle & Solo Discovery</a>
+        <div class="sub-text">Regular Yuan-Ye, The MixC, Yulin Creative Road</div>
+    </div>
+
+    <div class="card card-shop">
+        <a href="shopping.html" style="color: #673ab7;">🛍️ Shopping Checklist & Locations</a>
+        <div class="sub-text">รวมพิกัดร้าน Gadget, เสื้อผ้า และของฝากทั้งหมด</div>
+    </div>
 </div>
 
 </body>
